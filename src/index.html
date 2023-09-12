@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container__timeline">
+        <div class="container-wrapper">
+            <div class="timeline__content"></div>
+            <div class="timeline__control">
+                <form class="form__input">
+                    <input class="control__text" placeholder="Введите своё сообщение" name="text" autocomplete="off">
+                    <div class="control__audio"></div>
+                    <div class="control__video"></div>
+                </form>
+            </div>
+            <div class="timeline__geoPopup hidden">
+                <form class="geoPopup__form">
+                    <div class="geoPopup__title title">Что-то пошло не так</div>
+                    <p class="geoPopup__text">К сожалению, нам не удалось определить ваше местоположение, пожалуйста, дайте разрешение на использование геолокации, либо введите координаты вручную</p>
+                    <label><input class="geoPopup__input" placeholder="00.0000, 00.0000" autofocus>Введите свои координаты</label>
+                    <div class="geoPopup__error">Ошибка в введёных данных</div>
+                    <button class="geoPopup__button btn" type="submit">Ок</button>
+                    <button class="geoPopup__cancelButton btn">Отмена</button>
+                </form>
+            </div>
+        </div>
+    </div>
+      
+</body>
+</html>

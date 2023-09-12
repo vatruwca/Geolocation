@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+.container__timeline {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #d1ac31;  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container-wrapper {
+  width: 1200px;
+  height: 100vh;
+  padding-top: 50px;
+}
+
+.timeline__content {
+  width: 50%;
+  height: 500px;
+  border: 1px solid rgb(10, 124, 29);
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: auto;
+}
+
+.text__element {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(41, 189, 90, 0.685);
+  display: flex;
+  justify-content: space-between;
+}
+
+.text__element:nth-child(n+2) {
+  margin-bottom: 20px;
+}
+
+.text__element_content {
+  word-break: break-all;
+  width: 60%;
+  margin-right: 5%;
+}
+
+.text__element_date {
+  width: 15%;
+}
+
+.timeline__control {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.form__input {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid rgb(10, 124, 29);
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.control__text {
+  width: 100%;
+  margin-right: 15px;
+  border: none;
+  outline: none;
+}
+
+.control__audio {
+  background-image: url(e604a227469bd17d160e.svg);
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 1px solid rgb(10, 124, 29);
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.control__video {
+  background-image: url(d25bf67a1a6e368a1e25.svg);
+  width: 30px;
+  height: 30px;
+  background-size: 23px 23px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 1px solid rgb(10, 124, 29);
+  border-radius: 50px;
+}
+
+.hidden {
+  opacity: 0;
+  transform: scale(0);
+  transition: all .5s ease-in-out;
+}
+
+.active {
+  transform: scale(1);
+  opacity: 1;
+  transition: all .5s ease-in-out;
+}
+
+.timeline__geoPopup {
+  position: fixed;
+  width: 50%;
+  top: 50%;
+  z-index: 10;
+  left: 25%;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fff;
+}
+
+.geoPopup__input {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.geoPopup__error {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  color: red;
+}
+
+.btn {
+  background-color: #fff;
+  border: 1px solid rgb(10, 124, 29);
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.text__coords {
+  width: 20%;  
+}
